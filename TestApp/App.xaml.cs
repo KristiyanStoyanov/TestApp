@@ -9,9 +9,8 @@ namespace TestApp
     {
         public App()
         {
+            MainPage = new NavigationPage(new MainPage());
             InitializeComponent();
-
-            MainPage = new MainPage();
         }
 
         protected override void OnStart()

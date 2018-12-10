@@ -1,5 +1,20 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TestApp.About">
-    <ContentPage.Content>
-    </ContentPage.Content>
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestApp.About"
+             Title="About" Icon="menu_2x.png">
+     <ContentPage.Content>
+        <ScrollView>
+       <StackLayout VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand">
+           <Label Text="Welcome to About page"/> 
+           <Label Text="KERA WiFi Safe is a educational mobile application
+aiming to help you stay safe on public open networks. This product has
+been developed by Kristiyan Stoyanov and sposored by KERAInfo Sec. Ltd in
+conjuction with university master project at the University of Sunderland in
+the United Kingdom"/>
+    </StackLayout>
+            </ScrollView>
+  </ContentPage.Content>
 </ContentPage>
+

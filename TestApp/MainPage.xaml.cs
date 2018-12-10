@@ -13,14 +13,16 @@ namespace TestApp
         public MainPage()
         {
             this.Children.Add(new About());
-            this.Children.Add(new Settings());        
+            this.Children.Add(new Settings());
+            this.Children.Add(new MainScreen());
+            this.CurrentPageChanged += CurrentPageHasChanged;
+
             InitializeComponent();
         }
-
-       private async void Button_Clicked(object sender, System.EventArgs e)
+        protected void CurrentPageHasChanged(object sender, EventArgs e)
         {
-            IsBusy = true;
-            await Navigation.PushAsync(new MenuPage());
+            this.Title = this.CurrentPage.Title;
         }
+
     }
 }
