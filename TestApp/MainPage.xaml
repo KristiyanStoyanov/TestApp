@@ -3,5 +3,5 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:local="clr-namespace:TestApp"
              x:Class="TestApp.MainPage"
-             Title="Main Page">    
+             Title="Menu">
 </TabbedPage>

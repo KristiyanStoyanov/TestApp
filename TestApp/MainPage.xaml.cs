@@ -12,9 +12,9 @@ namespace TestApp
      
         public MainPage()
         {
-            this.Children.Add(new About());
-            this.Children.Add(new Settings());
             this.Children.Add(new MainScreen());
+            this.Children.Add(new Settings());
+            this.Children.Add(new About());
             this.CurrentPageChanged += CurrentPageHasChanged;
 
             InitializeComponent();
