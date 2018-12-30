@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              x:Class="TestApp.Settings"
              Title="Settings"
-             Icon="settings2x.png">
+             Icon="settings_25px.png">
         <ContentPage.Content>
             <StackLayout VerticalOptions="Center"
                          HorizontalOptions="Center">

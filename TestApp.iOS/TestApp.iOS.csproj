@@ -28,6 +28,8 @@
     <MtouchArch>x86_64</MtouchArch>
     <MtouchLink>SdkOnly</MtouchLink>
     <MtouchDebug>true</MtouchDebug>
+    <CodesignProvision>iOS Team Provisioning Profile: KERAInfoSec.IOrder</CodesignProvision>
+    <CodesignKey>iPhone Developer: christiyan.stoyanov@gmail.com (FCTRQUR8HF)</CodesignKey>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>none</DebugType>
@@ -49,9 +51,10 @@
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
     <MtouchArch>ARM64</MtouchArch>
-    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignKey>iPhone Developer: christiyan.stoyanov@gmail.com (FCTRQUR8HF)</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignProvision>iOS Team Provisioning Profile: KERAInfoSec.IOrder</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>none</DebugType>
@@ -159,13 +162,9 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\menu_3x.png" />
-    <BundleResource Include="Resources\settings_3x.png" />
-    <BundleResource Include="Resources\settings2x.png" />
-    <BundleResource Include="Resources\menu_2x.png" />
-    <BundleResource Include="Resources\folder_2x.png" />
-    <BundleResource Include="Resources\book_2x.png" />
-    <BundleResource Include="Resources\book_3x.png" />
+    <BundleResource Include="Resources\book_25px.png" />
+    <BundleResource Include="Resources\menu_25px.png" />
+    <BundleResource Include="Resources\settings_25px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\TestApp\TestApp.projitems" Label="Shared" />
