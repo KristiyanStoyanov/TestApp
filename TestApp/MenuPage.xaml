@@ -2,18 +2,26 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TestApp.MenuPage"
+             xmlns:local="clr-namespace:TestApp"
              Title="Reading Materials"
              NavigationPage.HasNavigationBar="True">
-    <ContentPage.Content>
-        <ScrollView Orientation="Vertical" 
-                    VerticalOptions="StartAndExpand">
-            <Grid>
-                <TableView>
-                    
-                </TableView>
-                
-            </Grid>         
-        </ScrollView>
-        
-    </ContentPage.Content>
+
+ <StackLayout>
+        <ListView ItemsSource="{Binding ContentViewModel}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.View>
+                            <StackLayout>
+                                <Label Text="{Binding Category}"></Label>
+                                <Label Text="{Binding Text}"></Label>
+                                <Label Text="Hello"></Label>
+                            </StackLayout>
+                        </ViewCell.View>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+ </StackLayout>
+            
 </ContentPage>

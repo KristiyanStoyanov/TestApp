@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using TestApp.ViewModel;
+using TestApp.Models;
 using Xamarin.Forms;
 
 namespace TestApp
@@ -10,6 +11,7 @@ namespace TestApp
         public MenuPage()
         {
             InitializeComponent();
+            
 //            var editor = new Label
 //            {
 //                Text = @"Hello Everybody this LGH bullies me.

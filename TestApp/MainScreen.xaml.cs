@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using TestApp.View;
 using Xamarin.Forms;
 
 namespace TestApp
@@ -15,7 +15,7 @@ namespace TestApp
 
         private async void Button_Clicked(object sender, System.EventArgs e)
         {
-            await Navigation.PushAsync(new MenuPage());
+            await Navigation.PushAsync(new ContentViewPage());
         }
     }
 }
