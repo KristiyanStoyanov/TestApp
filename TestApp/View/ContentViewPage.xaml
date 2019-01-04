@@ -6,12 +6,15 @@
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Heading"></Label>
-            <ListView x:Name="ContentList" 
-                      ItemSelected="Handle_ItemSelected">
+            <ListView x:Name="ContentList"> 
+                      
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <TextCell Text="{Binding Category}"
-                                  Detail="{Binding Text}"></TextCell>
+                                  Detail="{Binding Text}"
+                                  Tapped="Handle_Tapped">
+                            
+                        </TextCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>

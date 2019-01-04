@@ -18,9 +18,14 @@ namespace TestApp.View
             ContentList.ItemsSource = vm.ContentList;
         }
 
-        async void Handle_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        //async void Handle_ItemIsTapped(object sender, SelectedItemChangedEventArgs e)
+        //{ 
+        //    await Navigation.PushAsync(new ContentPage());
+        //}
+
+        async void Handle_Tapped(object sender, System.EventArgs e)
         {
-            await Navigation.PushModalAsync(new ContentPage());
+            await Navigation.PushAsync(new ContentPage());
         }
     }
 }
