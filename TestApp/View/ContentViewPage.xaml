@@ -2,19 +2,33 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              x:Class="TestApp.View.ContentViewPage"
-             xmlns:local="clr-namespace:TestApp">
+             xmlns:local="clr-namespace:TestApp"
+             Title="Library">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Heading"></Label>
-            <ListView x:Name="ContentList"> 
-                      
+        <StackLayout Spacing="10"
+                     Padding="10">
+            <Label Text="Available Content" 
+                   FontSize="34"
+                   FontFamily="Helvetica"
+                   TextColor="Navy"
+                   XAlign="Center"/>             
+            <ListView x:Name="ContentList" 
+                      HasUnevenRows="true"
+                      ItemTapped="Handle_ItemIsTapped">         
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <TextCell Text="{Binding Category}"
-                                  Detail="{Binding Text}"
-                                  Tapped="Handle_Tapped">
-                            
-                        </TextCell>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <StackLayout Spacing="5">
+                                    <Label Text="{Binding Category}"
+                                           FontSize="20"/>
+                                             
+                                    <Label Text="{Binding Text}"
+                                           Font="12"/>
+                                    
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
