@@ -11,5 +11,9 @@ namespace TestApp
         {
             InitializeComponent();
         }
+        void Handle_Clicked(object sender, System.EventArgs e)
+        {
+            Device.OpenUri(new Uri("mailto:kerainfosec@gmail.com"));
+        }
     }
 }

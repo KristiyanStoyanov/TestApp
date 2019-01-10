@@ -12,21 +12,21 @@
                    FontSize="34"
                    FontFamily="Helvetica"
                    TextColor="Navy"
-                   XAlign="Center"/>  
-            
+                   XAlign="Center"/>           
             <ListView x:Name="ContentList" 
                       HasUnevenRows="true"
-                      ItemTapped="Handle_ItemIsTapped">  
-                
+                      ItemTapped="Handle_ItemIsTapped">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <ViewCell.View>
-                                <StackLayout Spacing="5">
+                                <StackLayout Spacing="10"
+                                             Padding="5"
+                                             Margin="10">                     
                                     <Label Text="{Binding Category}"
                                            FontSize="20"
                                            FontAttributes="Bold"/>
-                                             
+                                    
                                     <Label Text="{Binding Text}"
                                            Font="12"
                                            HorizontalTextAlignment="Start"/>

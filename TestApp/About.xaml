@@ -7,12 +7,21 @@
         <ScrollView>
        <StackLayout VerticalOptions="CenterAndExpand"
                     HorizontalOptions="CenterAndExpand">
-           <Label Text="Welcome to About page"/> 
-           <Label Text="KERA WiFi Safe is a educational mobile application
-aiming to help you stay safe on public open networks. This product has
+           <Label Text="Welcome to About page"
+                  Margin="60"
+                  XAlign="Center" /> 
+                
+           <Label XAlign="Start"
+                  FontSize="12"
+                  Text="KERA WiFi Safe is a educational mobile application
+aiming to educate how stay safe on public open networks. This product has
 been developed by Kristiyan Stoyanov and sposored by KERAInfo Sec. Ltd in
 conjuction with university master project at the University of Sunderland in
 the United Kingdom"/>
+                
+                <Button Text="Report a problem"
+                        Clicked="Handle_Clicked"/>
+                    
     </StackLayout>
             </ScrollView>
   </ContentPage.Content>

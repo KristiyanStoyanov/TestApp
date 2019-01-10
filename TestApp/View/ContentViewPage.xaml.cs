@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Text;
 using System.Linq;
 using TestApp.ViewModel;
+using TestApp.Models;
+using System.IO;
 using Xamarin.Forms;
 
 namespace TestApp.View
@@ -19,10 +21,12 @@ namespace TestApp.View
         }
 
         async void Handle_ItemIsTapped(object sender, SelectedItemChangedEventArgs e)
-        { 
-            await Navigation.PushAsync(new ContentPage());
+        {
+               if (e.SelectedItem == null) return;
+                  ((ListView)sender).SelectedItem = null;
+
+           await Navigation.PushAsync(new ContentPage());
+
         }
-
-
     }
 }

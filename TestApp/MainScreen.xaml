@@ -2,14 +2,20 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              x:Class="TestApp.MainScreen"
-             Title="Menu"
+             Title="Menu" 
              Icon="book_25px.png">
-           
-             <StackLayout VerticalOptions="CenterAndExpand"
-                    HorizontalOptions="CenterAndExpand">
-             
+    <Grid VerticalOptions="FillAndExpand">
+          <Image Source="MainScreen.jpg"
+                 Aspect="AspectFill"
+                 InputTransparent="true"
+                 Opacity="0.6"> </Image>
+    <StackLayout VerticalOptions="CenterAndExpand"
+                 HorizontalOptions="CenterAndExpand">
+            
             <!-- Place new controls here -->
             <Label Text="Welcome to WiFi Safeguard"
+                     FontSize="28"
+                     TextColor="White"
                      HorizontalOptions="Center" 
                      VerticalOptions="CenterAndExpand" />
        
@@ -17,5 +23,6 @@
                     HorizontalOptions="Center" 
                     VerticalOptions="Center"
                     Clicked="Button_Clicked"/> 
-            </StackLayout>
+        </StackLayout>
+        </Grid>
         </ContentPage>  
