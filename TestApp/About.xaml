@@ -2,28 +2,46 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TestApp.About"
-             Title="About" Icon="menu_25px.png">
-     <ContentPage.Content>
+             Title="About" 
+             Icon="menu_25px.png">
+    <Grid VerticalOptions="CenterAndExpand"
+          HorizontalOptions="CenterAndExpand">
+        
+        <Image Source="book.jpg"
+               Aspect="AspectFill"
+               InputTransparent="true"
+               Opacity="1"/>
         <ScrollView>
-       <StackLayout VerticalOptions="CenterAndExpand"
-                    HorizontalOptions="CenterAndExpand">
-           <Label Text="Welcome to About page"
-                  Margin="60"
-                  XAlign="Center" /> 
+            <StackLayout VerticalOptions="CenterAndExpand"
+                         HorizontalOptions="CenterAndExpand"
+                         Spacing="0"
+                         Padding="0, 10, 0, 10">
                 
-           <Label XAlign="Start"
-                  FontSize="12"
-                  Text="KERA WiFi Safe is a educational mobile application
-aiming to educate how stay safe on public open networks. This product has
-been developed by Kristiyan Stoyanov and sposored by KERAInfo Sec. Ltd in
-conjuction with university master project at the University of Sunderland in
-the United Kingdom"/>
+                <Label Text="Hello Dear User"
+                       TextColor="White"
+                       FontFamily="Helvetica New"
+                       FontSize="Medium"
+                       XAlign="Center"
+                       YAlign="Center"/>
+                
+                <Label XAlign="Center"
+                       YAlign="Center"
+                       TextColor="White"
+                       FontFamily="Helvetica New"
+                       VerticalTextAlignment="Start"
+                       HorizontalTextAlignment="Start"
+                       Margin="20"
+                       FontSize="Small"
+                       Text="KERA WiFi Safe is a self-educational mobile application
+aiming to help mobile users be safer on public WiFi networks.
+This application has been developed by Kristiyan Stoyanov by sponsoring company KERA Info Sec. Ltd as
+part of MSc degree at the UoS"/>
                 
                 <Button Text="Report a problem"
-                        Clicked="Handle_Clicked"/>
-                    
-    </StackLayout>
-            </ScrollView>
-  </ContentPage.Content>
+                        Clicked="Handle_Clicked"
+                        Margin="20"/>
+            </StackLayout>
+        </ScrollView>
+    </Grid>
 </ContentPage>
 

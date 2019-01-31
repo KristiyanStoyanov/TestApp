@@ -6,6 +6,7 @@ using TestApp.ViewModel;
 using TestApp.Models;
 using System.IO;
 using Xamarin.Forms;
+using System.Diagnostics;
 
 namespace TestApp.View
 {
@@ -20,12 +21,19 @@ namespace TestApp.View
             ContentList.ItemsSource = vm.ContentList;
         }
 
+
         async void Handle_ItemIsTapped(object sender, SelectedItemChangedEventArgs e)
         {
-               if (e.SelectedItem == null) return;
-                  ((ListView)sender).SelectedItem = null;
+            var item = e.SelectedItem as Content;
+            //if (item == null)
+            //return;
+            //Content selected = e.SelectedItem as Content;
+            if (((ListView)sender).SelectedItem == null)
+                return;
+            //Do stuff here with the SelectedItem ...
+            ((ListView)sender).SelectedItem = null;
 
-           await Navigation.PushAsync(new ContentPage());
+            await Navigation.PushAsync(new ContentDetailViewPage(new ContentDetailViewModel()));
 
         }
     }

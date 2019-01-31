@@ -31,6 +31,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\ContentDetailViewPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
@@ -55,6 +59,10 @@
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ContentViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)View\ContentViewPage.xaml.cs">
       <DependentUpon>ContentViewPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ContentDetailViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\ContentDetailViewPage.xaml.cs">
+      <DependentUpon>ContentDetailViewPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

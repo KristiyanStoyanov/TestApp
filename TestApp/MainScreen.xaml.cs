@@ -17,6 +17,7 @@ namespace TestApp
         {
             await Navigation.PushAsync(new ContentViewPage());
         }
+
     }
 }
 

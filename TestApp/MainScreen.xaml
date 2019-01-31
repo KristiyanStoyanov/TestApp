@@ -4,25 +4,49 @@
              x:Class="TestApp.MainScreen"
              Title="Menu" 
              Icon="book_25px.png">
-    <Grid VerticalOptions="FillAndExpand">
-          <Image Source="MainScreen.jpg"
-                 Aspect="AspectFill"
-                 InputTransparent="true"
-                 Opacity="0.6"> </Image>
-    <StackLayout VerticalOptions="CenterAndExpand"
-                 HorizontalOptions="CenterAndExpand">
-            
-            <!-- Place new controls here -->
-            <Label Text="Welcome to WiFi Safeguard"
-                     FontSize="28"
-                     TextColor="White"
-                     HorizontalOptions="Center" 
-                     VerticalOptions="CenterAndExpand" />
-       
-            <Button Text="Reading Repository" 
-                    HorizontalOptions="Center" 
-                    VerticalOptions="Center"
-                    Clicked="Button_Clicked"/> 
+    <Grid VerticalOptions="CenterAndExpand"
+          HorizontalOptions="CenterAndExpand">
+        
+        
+        <Image Source="book.jpg"
+               Aspect="AspectFill"
+               InputTransparent="true"
+               Opacity="1"/>
+        <StackLayout Padding="10"
+                     Margin="20">
+            <Label Text="Welcome to"
+                   FontSize="36"
+                   FontFamily="Helvetica New, Times"
+                   FontAttributes="Bold, Italic"
+                   TextColor="White"
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Center" />
+            <Label Text="WiFi Safeguard"
+                   FontSize="36"
+                   FontFamily="Helvetica New, Times"
+                   FontAttributes="Bold, Italic"
+                   TextColor="White"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
         </StackLayout>
-        </Grid>
-        </ContentPage>  
+            
+        <StackLayout VerticalOptions="Center"
+                     HorizontalOptions="FillAndExpand">            
+            <!-- Place new controls here -->
+           <!-- <Label Text="Reading Repository"
+                   HorizontalOptions="Center"
+                   FontFamily="Helvetica"
+                   FontSize="20"
+                   TextColor="Aqua"/>-->
+            <Button Text="Reading Repository"
+                    TextColor="White"
+                    Margin="20"
+                    Opacity="1"
+                    FontSize="Large"
+                    HorizontalOptions="FillAndExpand" 
+                    VerticalOptions="FillAndExpand"
+                    Image="icon.png"
+                    Clicked="Button_Clicked"/>       
+        </StackLayout>
+    </Grid>
+</ContentPage>  

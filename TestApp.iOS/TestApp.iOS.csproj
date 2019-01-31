@@ -167,6 +167,15 @@
     <BundleResource Include="Resources\menu_25px.png" />
     <BundleResource Include="Resources\settings_25px.png" />
     <BundleResource Include="Resources\MainScreen.jpg" />
+    <BundleResource Include="Resources\Lush.jpg" />
+    <BundleResource Include="Resources\BrightVault.jpg" />
+    <BundleResource Include="Resources\LearningAndLeading.jpg" />
+    <BundleResource Include="Resources\FB.jpg" />
+    <BundleResource Include="Resources\wallpaper.jpg" />
+    <BundleResource Include="Resources\security.jpg" />
+    <BundleResource Include="Resources\book.jpg" />
+    <BundleResource Include="Resources\bookstack.jpg" />
+    <BundleResource Include="Resources\icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\TestApp\TestApp.projitems" Label="Shared" />

@@ -4,17 +4,21 @@
              x:Class="TestApp.View.ContentViewPage"
              xmlns:local="clr-namespace:TestApp"
              Title="Library">
-    <ContentPage.Content>
+    <Grid>
+        <Image Source="bookstack.jpg"
+               Opacity="0.1"
+               Aspect="AspectFill"/>
         <StackLayout Spacing="10"
                      Padding="10">
-            
             <Label Text="Available Content" 
-                   FontSize="34"
+                   FontSize="Large"
                    FontFamily="Helvetica"
-                   TextColor="Navy"
-                   XAlign="Center"/>           
+                   TextColor="#448AFF"
+                   XAlign="Center"/>
             <ListView x:Name="ContentList" 
                       HasUnevenRows="true"
+                      HorizontalOptions="EndAndExpand"
+                      VerticalOptions="FillAndExpand"
                       ItemTapped="Handle_ItemIsTapped">
                 <ListView.ItemTemplate>
                     <DataTemplate>
@@ -22,21 +26,23 @@
                             <ViewCell.View>
                                 <StackLayout Spacing="10"
                                              Padding="5"
-                                             Margin="10">                     
+                                             Margin="10">                    
                                     <Label Text="{Binding Category}"
-                                           FontSize="20"
-                                           FontAttributes="Bold"/>
-                                    
+                                           FontSize="Medium"
+                                           FontFamily="Helvetica New"
+                                           FontAttributes="Bold"/>   
+                                              
                                     <Label Text="{Binding Text}"
-                                           Font="12"
-                                           HorizontalTextAlignment="Start"/>
-                                    
-                                </StackLayout>
+                                           FontSize="Small"
+                                           FontFamily="Helvetica New"
+                                           HorizontalTextAlignment="Start"
+                                           VerticalTextAlignment="Start"/>
+                                    </StackLayout>
                             </ViewCell.View>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
         </StackLayout>
-    </ContentPage.Content>
+    </Grid>
 </ContentPage>

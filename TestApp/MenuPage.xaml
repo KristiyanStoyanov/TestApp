@@ -12,10 +12,11 @@
                 <DataTemplate>
                     <ViewCell>
                         <ViewCell.View>
-                            <StackLayout>
-                                <Label Text="{Binding Category}"></Label>
-                                <Label Text="{Binding Text}"></Label>
-                                <Label Text="Hello"></Label>
+                            <StackLayout HorizontalOptions="CenterAndExpand">
+                                <Label Text="{Binding Category}"
+                                       FontFamily="Helvetica"/>
+                                <Label Text="{Binding Text}"
+                                       FontFamily="Helvetica"/>
                             </StackLayout>
                         </ViewCell.View>
                     </ViewCell>

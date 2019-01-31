@@ -4,10 +4,15 @@
              x:Class="TestApp.Settings"
              Title="Settings"
              Icon="settings_25px.png">
-        <ContentPage.Content>
-            <StackLayout VerticalOptions="Center"
-                         HorizontalOptions="Center">
-           <Label Text="Welcome to settings"/>
-            </StackLayout>
-        </ContentPage.Content>
-    </ContentPage>
+    <Grid>
+        <Image Source="book.jpg"
+               Aspect="AspectFill"/>
+        <StackLayout VerticalOptions="FillAndExpand"
+                     HorizontalOptions="CenterAndExpand">
+            <Label Text="Under development"
+                   FontFamily="Helvetica, Times new Roman"
+                   FontSize="36"
+                   TextColor="White"/>
+        </StackLayout>
+    </Grid>
+</ContentPage>

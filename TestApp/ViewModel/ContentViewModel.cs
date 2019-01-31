@@ -7,13 +7,13 @@ using TestApp.Models;
 namespace TestApp.ViewModel
 {
     public class ContentViewModel
-    { 
+    {
         public List<Content> ContentList { get; set; }
-
+       
         public ContentViewModel()
         {
             ContentList = new Content().GetContent();
         }
- 
+
     }
 }
