@@ -32,10 +32,7 @@
                        HorizontalTextAlignment="Start"
                        Margin="20"
                        FontSize="Small"
-                       Text="KERA WiFi Safe is a self-educational mobile application
-aiming to help mobile users be safer on public WiFi networks.
-This application has been developed by Kristiyan Stoyanov by sponsoring company KERA Info Sec. Ltd as
-part of MSc degree at the UoS"/>
+                       Text="Helvetica New,Helvetica New,Helvetica New,Helvetica New"/>
                 
                 <Button Text="Report a problem"
                         Clicked="Handle_Clicked"
